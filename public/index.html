@@ -286,123 +286,247 @@
                         <label for="inputPassword4">วันอนุญาต</label>
                         <input type="password" class="form-control" id="inputPassword4"></div>
                 </div>
+                <h3>ออกให้โดยนายทะเบียน</h3>
                 <div class="row mb-3">
-                    <label for="address">ออกให้โดยนายทะเบียน</label>
-                    <div class="col-md-2"><input type="radio" name="drive" required /> กรุงเทพมหานคร</div>
-                    <label for="address2">สาขา :<span class="text-muted"></span></label>
-                    <input type="text" class="form-control" id="address2" placeholder="สาขา">
-                    <div class="col-md-6"><input type="radio" name="drive" required /> เหลือง</div>
-                    <div class="col-md-6"><input type="radio" name="drive" required /> เขียว</div>
-                    <div class="col-md-6"><input type="radio" name="drive" required /> แดง</div>
-                    <div class="col-md-6"><input type="radio" name="drive" required /> ฟ้า</div>
-                    <div class="col-md-6"><input type="radio" name="drive" required /> อื่นๆ
-                        <div class="form-group col-md-4">
-                            <input type="text" class="form-control" id="others" placeholder="อื่นๆ" required></div>
+                    <div class="col-md-5"><input type="radio" name="drive" required /> กรุงเทพมหานคร<input type="text" class="form-control" id="others" placeholder="สาขา" required>
                     </div>
-                    <div class=" row ">
-                        <div class="col-md-5 mb-3 ">
-                            <label for="country "></label>
-                            <select class="custom-select d-block w-100 " id="country " required>
-                        <option value=" ">Choose...</option>
-                        <option>United States</option>
-                    </select>
-                            <div class="invalid-feedback ">
-                                Please select a valid country.
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3 ">
-                            <label for="state ">State</label>
-                            <select class="custom-select d-block w-100 " id="state " required>
-                        <option value=" ">Choose...</option>
-                        <option>California</option>
-                    </select>
-                            <div class="invalid-feedback ">
-                                Please provide a valid state.
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3 ">
-                            <label for="zip ">Zip</label>
-                            <input type="text " class="form-control " id="zip " placeholder=" " required>
-                            <div class="invalid-feedback ">
-                                Zip code required.
-                            </div>
-                        </div>
+                    <div class="col-md-5"><input type="radio" name="drive" required /> จังหวัด<input type="text" class="form-control" id="others" placeholder="สาขา" required>
                     </div>
-                    <hr class="mb-4 ">
-                    <div class="custom-control custom-checkbox ">
-                        <input type="checkbox " class="custom-control-input " id="same-address ">
-                        <label class="custom-control-label " for="same-address ">Shipping address is the same as my billing
-                    address</label>
-                    </div>
-                    <div class="custom-control custom-checkbox ">
-                        <input type="checkbox " class="custom-control-input " id="save-info ">
-                        <label class="custom-control-label " for="save-info ">Save this information for next time</label>
-                    </div>
-                    <hr class="mb-4 ">
-
-                    <h4 class="mb-3 ">Payment</h4>
-
-                    <div class="d-block my-3 ">
-                        <div class="custom-control custom-radio ">
-                            <input id="credit " name="paymentMethod " type="radio " class="custom-control-input " checked required>
-                            <label class="custom-control-label " for="credit ">Credit card</label>
-                        </div>
-                        <div class="custom-control custom-radio ">
-                            <input id="debit " name="paymentMethod " type="radio " class="custom-control-input " required>
-                            <label class="custom-control-label " for="debit ">Debit card</label>
-                        </div>
-                        <div class="custom-control custom-radio ">
-                            <input id="paypal " name="paymentMethod " type="radio " class="custom-control-input " required>
-                            <label class="custom-control-label " for="paypal ">PayPal</label>
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-md-6 mb-3 ">
-                            <label for="cc-name ">Name on card</label>
-                            <input type="text " class="form-control " id="cc-name " placeholder=" " required>
-                            <small class="text-muted ">Full name as displayed on card</small>
-                            <div class="invalid-feedback ">
-                                Name on card is required
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3 ">
-                            <label for="cc-number ">Credit card number</label>
-                            <input type="text " class="form-control " id="cc-number " placeholder=" " required>
-                            <div class="invalid-feedback ">
-                                Credit card number is required
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-md-3 mb-3 ">
-                            <label for="cc-expiration ">Expiration</label>
-                            <input type="text " class="form-control " id="cc-expiration " placeholder=" " required>
-                            <div class="invalid-feedback ">
-                                Expiration date required
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3 ">
-                            <label for="cc-cvv ">CVV</label>
-                            <input type="text " class="form-control " id="cc-cvv " placeholder=" " required>
-                            <div class="invalid-feedback ">
-                                Security code required
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="mb-4 ">
-                    <button class="btn btn-primary btn-lg btn-block " type="submit ">Continue to checkout</button>
-                    </form>
+                </div>
+                <h4>ใบขับขี่</h4>
+                <div class="row mb-3">
+                    <div class="col-md-4"><input type="radio" name="drive" required /> รถจักรยานยนต์</div>
+                    <div class="col-md-4"><input type="radio" name="drive" required /> รถยนต์</div>
+                    <div class="col-md-4"><input type="radio" name="drive" required /> รถสามล้อ</div>
+                    <div class="col-md-4"><input type="radio" name="drive" required /> รถขนส่ง</div>
+                    <div class="col-md-4"><input type="radio" name="drive" required /> อื่นๆ
+                        <input type="text" class="form-control" id="others" placeholder="อื่นๆ" required></div>
+                </div>
+                <h5>ชนิด</h5>
+                <div class="row mb-3">
+                    <div class="col-md-4"><input type="radio" name="drive" required /> ชั่วคราว</div>
+                    <div class="col-md-4"><input type="radio" name="drive" required /> ตลอดชีพ</div>
+                    <div class="col-md-4"><input type="radio" name="drive" required /> สาธารณะ</div>
+                    <div class="col-md-4"><input type="radio" name="drive" required /> บุคคล
+                        <input type="text" class="form-control" id="others" placeholder="ชนิดที่" required></div>
+                    <div class="col-md-4"><input type="radio" name="drive" required /> ทุกประเภท
+                        <input type="text" class="form-control" id="others" placeholder="ชนิดที่" required></div>
+                </div>
+                <h6>ข้าพเจ้าผู้ออกใบสั่งฉบับนี้ได้เรียกเก็บใบขับขี่ไว้ และให้ใช้เป็นใบแทนใบอนุญาตขับขี่ชั่วคราว ไม่เกิน ๗ วัน นับแต่วันออกใบแทนใบอนุญาตขับขี่นี้</h6>
+                <h5>ผู้ออกใบสั่ง</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="address2">ยศ</label>
+                        <input type="text" class="form-control" id="address2"></div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">ชื่อ</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">นามสกุล</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-3">
+                        <label for="address2">รหัส</label>
+                        <input type="text" class="form-control" id="address2"></div>
                 </div>
             </div>
-
-            <footer class="my-5 pt-5 text-muted text-center text-small ">
-                <p class="mb-1 ">&copy; 2017-2020 Company Name</p>
-                <ul class="list-inline ">
-                    <li class="list-inline-item "><a href="# ">Privacy</a></li>
-                    <li class="list-inline-item "><a href="# ">Terms</a></li>
-                    <li class="list-inline-item "><a href="# ">Support</a></li>
-                </ul>
-            </footer>
         </div>
+        <!-- part 2 -->
+        <hr class="mb-4 ">
+        <div class="container">
+            <div class="py-5 text-center">
+                <i class="fas fa-car-alt fa-6x text-danger"></i>
+                <h2>ใบสั่งเจ้าพนักงานจราจรหรือพนักงานเจ้าหน้าที่</h2>
+
+            </div>
+            <div class="mb-3">
+                <h5>ชื่อผู้ขับขี่,เจ้าของหรือผู้ครอบครอง</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="address2">ชื่อ</label>
+                        <input type="text" class="form-control" id="address2"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">สกุล</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+
+                </div>
+            </div>
+            <div class="mb-3">
+                <h5>ที่อยู่</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="address2">ตรอก/ซอย</label>
+                        <input type="text" class="form-control" id="address2"></div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">ถนน</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">ตำบล/แขวง</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">เขต/อำเภอ</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">จังหวัด</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <h5>ข้อหา</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" id="address2"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="address2">ความเร็วที่กฎหมายกำหนด</label>
+                        <input type="text" class="form-control" id="address2" placeholder="กม./ชม."></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">ความเร็วที่ตรวจจับ</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="กม./ชม."></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">ช่องทางเดินรถที่</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">หมายเลขทะเบียนรถ</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+
+                </div>
+            </div>
+            <div class="mb-3">
+                <h6>อาศัยอำนาจตามความในมาตรา ฯลฯ ให้ผู้ขับขี่/เจ้าของ/ผู้ครอบครองรถไปชำระค่าปรับตามข้อกำหนดสำนักงานตำรวจแห่งชาติ</h6>
+            </div>
+            <h5>ผู้ออกใบสั่ง</h5>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputPassword4">ชื่อ</label>
+                    <input type="password" class="form-control" id="inputPassword4"></div>
+                <div class="form-group col-md-4">
+                    <label for="inputPassword4">นามสกุล</label>
+                    <input type="password" class="form-control" id="inputPassword4"></div>
+                <div class="form-group col-md-4">
+                    <label for="address2">รหัส</label>
+                    <input type="text" class="form-control" id="address2"></div>
+            </div>
+            <div class="mb-3">
+                <h5>หน่วยงานผู้ออกใบสั่ง</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">ตึก/อาคาร</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="address2">ตรอก/ซอย</label>
+                        <input type="text" class="form-control" id="address2"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">ถนน</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">ตำบล/แขวง</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">เขต/อำเภอ</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">จังหวัด</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">โทร</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <h5>ชื่อผู้รับ</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">ชื่อ</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">นามสกุล</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <h5>ที่อยู่ผู้รับ</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">เลขที่</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="address2">ตรอก/ซอย</label>
+                        <input type="text" class="form-control" id="address2"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">ถนน</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">ตำบล/แขวง</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">เขต/อำเภอ</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">จังหวัด</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">โทร</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="address2">เลขที่ใบสั่ง</label>
+                        <input type="text" class="form-control" id="address2"></div>
+                    <div class="form-group col-md-3">
+                        <label for="inputPassword4">วันที่กระทำผิด</label>
+                        <input type="date" class="form-control" id="myDate" value="2020-08-05"></div>
+                    <div class="form-group col-md-3">
+                        <label for="inputPassword4">เวลาที่กระทำผิด</label>
+                        <input type="time" class="form-control" id="myTime" value="00:00 น."></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">จำนวนเงินค่าปรับ</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">วันครบกำหนดชำระ</label>
+                        <input type="date" class="form-control" id="myDate" value="2020-08-05"></div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">คะแนนที่ถูกบันทึกเดิม</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">คะแนนที่ถูกบันทึกครั้งนี้</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">คะแนนที่ถูกบันทึกรวม</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">สถานะใบอนุญาตขับขี่</label>
+                        <input type="password" class="form-control" id="inputPassword4"></div>
+                </div>
+            </div>
+            <h4>พยานหลักฐาน</h4>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">แนะนำหลักฐานที่เป็นสกุลไฟล์ (.jpg , .pdf , .png)</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </form>
+            <br> <br><button class="btn btn-success btn-lg btn-block" type="submit">Continue</button>
+        </div>
+        <div class="invalid-feedback">
+            กรุณาแนบหลักฐาน
+        </div>
+    </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small ">
+        <p class="mb-1 "></p>
+        <ul class="list-inline ">
+
+    </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script>
+        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js "><\/script>')
+    </script>
+    <script src="../assets/dist/js/bootstrap.bundle.js "></script>
+    <script src="form-validation.js "></script>
+    </form>
+</body>
 
 </html>
